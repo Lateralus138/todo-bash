@@ -1,8 +1,11 @@
-<div style="display: inline-block;">
-<div style="padding: 0 8px;color: #EFEFEF;width: auto;height: 24px;background-color: #333333;text-align: center;border-top-left-radius: 5px;border-bottom-left-radius: 5px;display:inline-block;margin:0;float: left;border-left: 1px solid #000000;border-top: 1px solid #000000;border-bottom: 1px solid #000000;border-right: 1px solid #000000;">
-Bash
-</div>
-<div style="padding: 0 8px;color: #EFEFEF;width: auto;height: 24px;background-color: #009900;text-align: center;border-top-right-radius: 5px;border-bottom-right-radius: 5px;display:inline-block;margin:0;float: left;border-right: 1px solid #006600;border-top: 1px solid #006600;border-bottom: 1px solid #006600;border-left: 1px solid #006600">
-Todo
-</div>
-</div>
+# Bash Todo
+
+[![GitHub release][badge]][repo]
+
+A Linux<sup>[1]()</sup> Bash<sup>[2]()</sup> 'TODO' function &amp; script.
+
+## Disclaimer
+
+I wrote this as a temporary option until I write my Python<sup>[3]()</sup> version.
+
+[badge]:https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2013%2F07%2F12%2F17%2F41%2Fbutton-152243_640.png
