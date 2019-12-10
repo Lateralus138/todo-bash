@@ -1,6 +1,8 @@
 # Bash Todo
 
-<a href="../../">![GitHub release|200x24]</a>
+<a href="../../">![GitHub release|200x24][badge]</a>
+
+![GitHub release|200x24][badge]
 
 A Linux<sup>[1]()</sup> Bash<sup>[2]()</sup> 'TODO' function &amp; script.
 
