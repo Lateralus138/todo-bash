@@ -31,7 +31,7 @@ List, add, or remove todo items.
 
 ## Installation
 
-- Download the [script file](https://github.com/Lateralus138/todo-bash/blob/master/todo).
+- Download the [script file](todo.sh).
 
 - Place the script anywhere in your $PATH directories.
 
