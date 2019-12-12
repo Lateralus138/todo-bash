@@ -20,6 +20,18 @@ chmod u+x /path/to/script/file # for you only
 chmod +x /path/to/script/file # for any user
 ```
 
+- Copy &amp; paste the following line (also found in the script) without the quotes to any of your config/.dotfiles to enable Bash Completion:
+
+```Bash
+complete -W '-h --help -r --remove -a --add -q --quiet' todo
+```
+
+## Installation - Alternate
+
+- Copy &amp; paste the function from the script file to your own function/script/config file.
+
+- Repeat the same process as above for Bash Completion.
+
 ## Usage
 
 ```Bash
