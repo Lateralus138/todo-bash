@@ -6,6 +6,29 @@ A Linux<sup>[1](#linux)</sup> Bash<sup>[2](#bash)</sup> (command line) 'TODO' fu
 
 I wrote this as a temporary option until I write my Python<sup>[3](#python)</sup> version.
 
+## Usage
+
+```Bash
+$ todo --help
+
+@Usage:	todo [INDEX]...
+     	todo [OPTIONS [INDEX|ITEM]...]...
+List, add, or remove todo items.
+
+@OPTIONS:
+	-h,--help	This help message.
+	-r,--remove	Remove an item by INDEX number. 
+	-a,--add	Add an item by ITEM.
+	-q,--quiet	No error messages.
+@INDEX:
+	Integers	Index number of item.
+@ITEM:
+	String		Todo ITEM.
+@EXAMPLES:
+	todo -a "Something to do" # Add a todo item
+	todo -r 1 # Remove item at index #1
+```
+
 ## Installation
 
 - Download the [script file](todo).
@@ -32,28 +55,9 @@ complete -W '-h --help -r --remove -a --add -q --quiet' todo
 
 - Repeat the same process as above for Bash Completion.
 
-## Usage
+## Screenshot
 
-```Bash
-$ todo --help
-
-@Usage:	todo [INDEX]...
-     	todo [OPTIONS [INDEX|ITEM]...]...
-List, add, or remove todo items.
-
-@OPTIONS:
-	-h,--help	This help message.
-	-r,--remove	Remove an item by INDEX number. 
-	-a,--add	Add an item by ITEM.
-	-q,--quiet	No error messages.
-@INDEX:
-	Integers	Index number of item.
-@ITEM:
-	String		Todo ITEM.
-@EXAMPLES:
-	todo -a "Something to do" # Add a todo item
-	todo -r 1 # Remove item at index #1
-```
+![ScreenShot](images/bash_todo.png)
 
 ## Function &amp; Bash Completion
 
