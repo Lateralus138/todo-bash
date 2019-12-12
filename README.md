@@ -33,6 +33,8 @@ List, add, or remove todo items.
 
 - Download the [script file:todo](todo).
 
+  - [Release Page](https://github.com/Lateralus138/todo-bash/releases/tag/1.0) 
+
 - Place the script anywhere in your $PATH directories.
 
 - Change the file permissions to be executable:
