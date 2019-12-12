@@ -2,7 +2,7 @@
 #complete -W '-h --help -r --remove -a --add -q --quiet' todo
 function todo(){
 	local conf="${HOME}/.config/.todo"
-	local iterVal mode prms="$@"i array
+	local iterVal mode array
 	[[ -f "${conf}" ]] ||
 	cat /dev/null > "${conf}"
 	sed -i '/^\s*$/d' "${conf}"
