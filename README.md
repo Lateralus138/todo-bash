@@ -31,7 +31,7 @@ List, add, or remove todo items.
 
 ## Installation
 
-- Download the [script file](todo.sh).
+- Download the [script file:todo](todo).
 
 - Place the script anywhere in your $PATH directories.
 
