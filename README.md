@@ -19,7 +19,7 @@ A Linux (command line) 'TODO' function &amp; script.
 
 ## Disclaimer
 
-I wrote this as a temporary option until I write my ***`Fortran`*** version.
+I wrote this as a temporary option until I write my ***`Fortran`*** version. This still works great as is if you prefer a script.
 
 
 ## Usage
