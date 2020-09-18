@@ -1,5 +1,7 @@
 # ![button](images/bashtodo.png)
 
+**`Please excuse this crappy README, it was quick and dirty and I'll have a new one up soon`**
+
 A Linux<sup>[1](#linux)</sup> Bash<sup>[2](#bash)</sup> (command line) 'TODO' function &amp; script.
 
 ## Disclaimer
