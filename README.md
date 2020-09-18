@@ -1,10 +1,12 @@
-![button](images/bashtodo.png)
+# ![button](images/bashtodo.png)
 
 A Linux<sup>[1](#linux)</sup> Bash<sup>[2](#bash)</sup> (command line) 'TODO' function &amp; script.
 
 ## Disclaimer
 
-I wrote this as a temporary option until I write my Python<sup>[3](#python)</sup> version.
+I wrote this as a temporary option until I write my ~~Python~~<sup>[3](#python)</sup> version.
+
+## **`Edit: I am now re-writing this in Fortran.`**
 
 ## Usage
 
