@@ -6,6 +6,7 @@ function todo(){
 	[[ -f "${conf}" ]] ||
 	cat /dev/null > "${conf}"
 	sed -i '/^\s*$/d' "${conf}"
+	sed -i '/^$/d' "${conf}"
 	case "$1" in
 		-h|--help)	mode=0 ;;
 		-r|--remove)	mode=1 ;;

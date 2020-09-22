@@ -92,13 +92,15 @@ complete -W '-h --help -r --remove -a --add -q --quiet' todo
 ## Function &amp; Bash Completion
 
 ```Bash
-complete -W '-h --help -r --remove -a --add -q --quiet' todo
+#!/bin/bash
+#complete -W '-h --help -r --remove -a --add -q --quiet' todo
 function todo(){
 	local conf="${HOME}/.config/.todo"
 	local iterVal mode array
 	[[ -f "${conf}" ]] ||
 	cat /dev/null > "${conf}"
 	sed -i '/^\s*$/d' "${conf}"
+	sed -i '/^$/d' "${conf}"
 	case "$1" in
 		-h|--help)	mode=0 ;;
 		-r|--remove)	mode=1 ;;
@@ -153,6 +155,7 @@ EOF
 		fi
 	fi
 }
+todo "$@"
 ```
 ## Files
 
