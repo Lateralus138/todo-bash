@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=todo
+Exec=todo %F
+Icon=todo
+Terminal=true
+Type=Application
+Categories=Utility;

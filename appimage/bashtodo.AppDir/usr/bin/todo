@@ -1,0 +1,64 @@
+#!/bin/bash
+#complete -W '-h --help -r --remove -a --add -q --quiet' todo
+function todo(){
+	local conf="${HOME}/.config/.todo"
+	local iterVal mode array
+	[[ -f "${conf}" ]] ||
+	cat /dev/null > "${conf}"
+	sed -i '/^\s*$/d' "${conf}"
+	case "$1" in
+		-h|--help)	mode=0 ;;
+		-r|--remove)	mode=1 ;;
+		-a|--add)	mode=2 ;;
+		*[0-9]*)	mode=3 ;;
+		-q|--quiet)	mode=4 ;;
+		*)		mode=5 ;;
+	esac
+	if [[ "${mode}" =~ ^[0-5]$ ]]; then
+		if [[ "${mode}" -eq 0 ]]; then
+			cat << EOF
+
+@Usage:	todo [INDEX]...
+     	todo [OPTIONS [INDEX|ITEM]...]...
+List, add, or remove todo items.
+
+@OPTIONS:
+	-h,--help	This help message.
+	-r,--remove	Remove an item by INDEX number. 
+	-a,--add	Add an item by ITEM.
+	-q,--quiet	No error messages.
+@INDEX:
+	Integers	Index number of item.
+@ITEM:
+	String		Todo ITEM.
+@EXAMPLES:
+	todo -a "Something to do" # Add a todo item
+	todo -r 1 # Remove item at index #1
+
+EOF
+		elif [[ "${mode}" -eq 1 ]]; then
+			sed -i -e "${2}d" "${conf}"
+			return
+		elif [[ "${mode}" -eq 2 ]]; then
+			echo "$2" >> "${conf}"
+			return
+		elif [[ "${mode}" -eq 3 ]]; then
+			readarray -t array < "${conf}"
+			echo "${array[$((${1} - 1))]}"
+			return
+		else
+			readarray -t array < "${conf}"
+			if [[ ${#array[@]} -eq 0 ]]; then
+				[[ ${mode} -ne 4 ]] &&
+				echo "No items in the TODO list."
+				return
+			fi
+			for iterVal in "${!array[@]}"; do
+				echo "[$((${iterVal} + 1))]:${array[${iterVal}]}"
+			done
+			return
+		fi
+	fi
+}
+todo "$@"
+

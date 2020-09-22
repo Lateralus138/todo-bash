@@ -1,5 +1,7 @@
 # Todo Bash
 
+***`COMING SOON`*** ***::*** POSIX compliant fixes and an ***AppImage***.
+
 ![button](images/bashtodo.png)
 
 ![Linux Utility](https://img.shields.io/static/v1?label=Utility&message=Linux&color=blue) ![Command Line Utility](https://img.shields.io/static/v1?label=Utility&message=Command%20Line&color=blueviolet) ![Bash Utility](https://img.shields.io/static/v1?label=Utility&message=Bash&color=important)
