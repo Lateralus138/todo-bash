@@ -33,6 +33,8 @@ I wrote this as a temporary option until I write my ***`Fortran`*** version. Thi
 
 ## Usage
 
+> Use the script and AppImage in the exact same way.
+
 ```Bash
 $ todo --help
 
@@ -55,6 +57,8 @@ List, add, or remove todo items.
 ```
 
 ## Installation
+
+> Install the script and AppImage in the exact same way.
 
 1. Download the script file: [[todo](todo)] or get it from the official release page:
 - [Release Page](https://github.com/Lateralus138/todo-bash/releases/tag/1.0) 
