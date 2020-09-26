@@ -92,8 +92,11 @@ complete -W '-h --help -r --remove -a --add -q --quiet' todo
 ## Function &amp; Bash Completion
 
 ```Bash
-#!/bin/bash
-#complete -W '-h --help -r --remove -a --add -q --quiet' todo
+#!/usr/bin/env bash
+# This file can be sourced or executed.
+# More information below at the "Execution" section
+
+# Todo Function
 function todo(){
 	local conf="${HOME}/.config/.todo"
 	local iterVal mode array
@@ -127,8 +130,14 @@ List, add, or remove todo items.
 @ITEM:
 	String		Todo ITEM.
 @EXAMPLES:
-	todo -a "Something to do" # Add a todo item
-	todo -r 1 # Remove item at index #1
+	todo 		
+		List all items in todo list.
+	todo 1
+		List 1st ITEM in todo list. 
+	todo -a "Something to do"
+		Add a todo item.
+	todo -r 1
+		Remove item at index #1.
 
 EOF
 		elif [[ "${mode}" -eq 1 ]]; then
@@ -155,7 +164,16 @@ EOF
 		fi
 	fi
 }
-todo "$@"
+
+# Test if this file is being sourced or executed.
+$(return >/dev/null 2>&1)
+# If file is sourced the enable Bash Completion
+if [ "$?" -eq "0" ]; then
+	complete -W '-h --help -r --remove -a --add -q --quiet' todo
+else
+# If not sourced the run the function with possible params.
+	todo "$@"
+fi
 ```
 ## Files
 
