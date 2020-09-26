@@ -36,7 +36,6 @@ I wrote this as a temporary option until I write my ***`Fortran`*** version. Thi
 > Use the script and AppImage in the exact same way.
 
 ```Bash
-$ todo --help
 
 @Usage:	todo [INDEX]...
      	todo [OPTIONS [INDEX|ITEM]...]...
@@ -52,8 +51,15 @@ List, add, or remove todo items.
 @ITEM:
 	String		Todo ITEM.
 @EXAMPLES:
-	todo -a "Something to do" # Add a todo item
-	todo -r 1 # Remove item at index #1
+	todo 		
+		List all items in todo list.
+	todo 1
+		List 1st ITEM in todo list. 
+	todo -a "Something to do"
+		Add a todo item.
+	todo -r 1
+		Remove item at index #1.
+
 ```
 
 ## Installation
@@ -62,7 +68,25 @@ List, add, or remove todo items.
 
 1. Download the script file: [[todo](todo)] or get it from the official release page:
 - [Release Page](https://github.com/Lateralus138/todo-bash/releases/tag/1.0) 
-2. Place the script anywhere in your $PATH directories.
+2. How to use:
+   1. Place the script anywhere in your $PATH directories and/or...
+   2. Execute/Run or Source the file:
+      1. Run like any other script/file:
+		```Bash
+		$ /path/to/todo --help
+		$ # or in directory:
+		$ ./todo -a "Do this thing"
+		$ # or if in $PATH
+		$ todo -r 1 
+		```
+      2. Or source the file with Completion:
+		```Bash
+		$ . /path/to/todo
+		$ # or
+		$ source /path/to/todo
+		$ # or if in $PATH or directory:
+		$ . todo 
+		```
 3. Change the file permissions to be executable:
 
 ```Bash
@@ -71,7 +95,7 @@ chmod u+x /path/to/script/file # for you only
 chmod +x /path/to/script/file # for any user
 ```
 
-4. Copy &amp; paste the following line (also found in the script) without the  comment '#' to any of your config/.dotfiles to enable Bash Completion:
+4. If you only use the fucntion you can copy &amp; paste the following line (also found in the script) without the  comment '#' to any of your script/config/.dotfiles to enable Bash Completion:
 
 ```Bash
 complete -W '-h --help -r --remove -a --add -q --quiet' todo
