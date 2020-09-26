@@ -22,7 +22,7 @@ A Linux (command line) 'TODO' function &amp; script.
 	- [Installation - Alternate](#installation---alternate)
 	- [Screenshots](#screenshots)
 	- [Function &amp; Bash Completion](#function--bash-completion)
-	- [files](#files)
+	- [File Links](#file-links)
 	- [Project Links](#project-links)
 	- [License](#license)
 
@@ -200,7 +200,7 @@ else
 fi
 ```
 
-## files
+## File Links
 
 |File|Description|
 |:---:|:---:|
