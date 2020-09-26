@@ -205,7 +205,7 @@ fi
 |File|Description|
 |:---:|:---:|
 |[Bash Script](./todo)|Script File|
-|[AppImage](./appimage/bashtodo-x86_64.AppImage)|Compiled AppImage.|
+|[AppImage](./appimage/todo-x86_64.AppImage)|Compiled AppImage.|
 
 ## Project Links
 
