@@ -35,5 +35,5 @@ jobs:
         tag: Continuous
         name: Continuous Build
         prerelease: False
-        artifacts: "appimage/bashtodo-x86_64.AppImage,todo"
+        artifacts: "appimage/todo-x86_64.AppImage,todo,todo.bash"
         token: ${{ secrets.GITHUB_TOKEN }}
