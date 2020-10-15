@@ -8,8 +8,7 @@
 
 ![Linux Utility](https://img.shields.io/static/v1?label=Utility&message=Linux&color=blue) ![Command Line Utility](https://img.shields.io/static/v1?label=Utility&message=Command%20Line&color=blueviolet) ![Bash Utility](https://img.shields.io/static/v1?label=Utility&message=Bash&color=important)
 
-
-A Linux (command line) 'TODO' function &amp; script.
+A Linux (command line) 'TODO' AppImage, function, and script.
 
 ![Logo](images/todo.png)
 
